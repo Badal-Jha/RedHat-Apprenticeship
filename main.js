@@ -1,9 +1,12 @@
+
 function validation() {
   var fname = document.getElementById("fname").value;
   var lname = document.getElementById("lname").value;
   var email = document.getElementById("email").value;
   var country = document.getElementById("cname").value;
   var number = document.getElementById("mNumb").value;
+
+  //Regular expressions
   var fnamecheck = /^[A-Za-z. ]{3,20}$/;
   var lnamecheck = /^[A-Za-z. ]{3,20}$/;
   var countrycheck = /^[A-Za-z. ]{3,20}$/;
