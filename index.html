@@ -79,8 +79,9 @@
           <div class="modal-form-details"></div>
         </div>
       </div>
+      <!-- onsubmit="return validation()" -->
 
-      <form action="#" onsubmit="return validation()">
+      <form action="#">
         <div class="form-col">
           <div class="col">
             <!-- Name -->
@@ -100,8 +101,8 @@
             <div class="minput">
               <input type="text" id="cname" dir="auto" required />
               <span class="bar"></span>
-              <label>Country</label>
-              <span id="countryError"></span>
+              <label>Current Localtion</label>
+              <span id="cnameError"></span>
             </div>
             <!-- college        -->
             <div class="minput">
@@ -238,7 +239,7 @@
               <input type="text" id="mNumb" dir="auto" required />
               <span class="bar"></span>
               <label>Mobile Number</label>
-              <span id="mobileError"></span>
+              <span id="mNumbError"></span>
             </div>
             <!-- email -->
             <div class="minput">
@@ -269,7 +270,7 @@
         </div>
         <div class="form-buttons">
           <div class="submit" id="submit">
-            <input type="submit" id="send" value="Submit" />
+            <input type="submit" id="send" value="Submit" disabled />
           </div>
           <div class="reset">
             <input type="reset" value="Clear" />
