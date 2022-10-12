@@ -376,10 +376,10 @@ label.control--radio {
 #emailError {
   color: red;
 }
-#mobileError {
+#mNumbError {
   color: red;
 }
-#countryError {
+#cnameError {
   color: red;
 }
 
