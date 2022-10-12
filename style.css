@@ -364,3 +364,18 @@ label.control--radio {
   content: " *";
   color: red;
 }
+#fnameError {
+  color: red;
+}
+#lnameError {
+  color: red;
+}
+#emailError {
+  color: red;
+}
+#mobileError {
+  color: red;
+}
+#countryError {
+  color: red;
+}
