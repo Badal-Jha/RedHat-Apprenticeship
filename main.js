@@ -35,7 +35,7 @@ let isCorrect = [
   { fieldName: "radio", value: false },
   { fieldName: "dob", value: false },
 ];
-
+console.log(isCorrect);
 function formData() {}
 
 const skillBarInputs = document.querySelectorAll(".skill-input-controls");
@@ -124,7 +124,7 @@ function buttonEnabled() {
   isCorrect.forEach((ele) => {
     if (ele.value == false) flag = false;
   });
-  console.log(flag, "flag");
+
   if (flag) {
     document.getElementById("send").disabled = false;
   } else document.getElementById("send").disabled = true;
@@ -143,7 +143,6 @@ function validate(field, regex, errorMessage, id) {
     document.getElementById(`${id}Error`).innerHTML = "";
     isCorrect.map((field) => {
       if (field.fieldName == id) {
-        console.log("working");
         field.value = true;
       }
     });
@@ -170,13 +169,11 @@ radioInputs.forEach((radioInput) => {
 });
 const dob = document.getElementById("dob");
 dob.onchange = () => {
-  console.log(dob.value);
   if (dob.value) {
     isCorrect.forEach((ele) => {
       if (ele.fieldName == "dob") ele.value = true;
     });
   }
-  console.log(isCorrect);
 };
 
 var modal = document.getElementById("preview");
