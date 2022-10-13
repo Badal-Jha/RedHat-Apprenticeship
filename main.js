@@ -5,6 +5,11 @@ const patterns = [
     errorMessage: "**Should not contain digits and special characters",
   },
   {
+    fieldName: "lname",
+    regex: /^[A-Za-z. ]{3,20}$/,
+    errorMessage: "**Should not contain digits and special characters",
+  },
+  {
     fieldName: "cname",
     regex: /^[A-Za-z. ]{1,20}$/,
     errorMessage: "**Should not contain digits and special characters",
@@ -22,6 +27,7 @@ const patterns = [
 ];
 let isCorrect = [
   { fieldName: "fname", value: false },
+  { fieldName: "lname", value: false },
   { fieldName: "cname", value: false },
   { fieldName: "mNumb", value: false },
   { fieldName: "email", value: false },
@@ -101,18 +107,17 @@ const inputs = document.querySelectorAll(
   "input[type='text'],input[type='email']"
 );
 inputs.forEach((input) => {
-  if (input.id != "lname")
-    input.addEventListener("keyup", (e) => {
-      const pattern = patterns.filter(
-        (pattern) => pattern.fieldName == e.target.id
-      );
-      validate(
-        e.target.value,
-        pattern[0].regex,
-        pattern[0].errorMessage,
-        pattern[0].fieldName
-      );
-    });
+  input.addEventListener("keyup", (e) => {
+    const pattern = patterns.filter(
+      (pattern) => pattern.fieldName == e.target.id
+    );
+    validate(
+      e.target.value,
+      pattern[0].regex,
+      pattern[0].errorMessage,
+      pattern[0].fieldName
+    );
+  });
 });
 function buttonEnabled() {
   let flag = true;

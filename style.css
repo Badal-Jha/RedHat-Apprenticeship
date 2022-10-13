@@ -29,21 +29,20 @@ nav {
 }
 .logo {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
   margin-top: 6px;
   margin-bottom: 6px;
 }
 .logo h1 {
   color: white;
-  margin-top: 5px;
-  margin-left: 5px;
 }
 .title {
   margin: auto;
 }
 .title h2 {
   color: white;
-  /* margin-bottom: 10px;
-  margin-left: 110px; */
 }
 
 .details {
@@ -429,7 +428,7 @@ label.control--radio {
   flex-wrap: wrap;
 }
 .form-buttons {
-  margin-top: 50px;
+  /* margin-top: 15px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -471,23 +470,41 @@ input[type="reset"] {
   padding: 20px;
   border: 1px solid #888;
   width: 40%;
+  border-radius: 6px;
+  position: relative;
 }
 .model-container {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  align-items: center;
 }
 .model-container-top {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+.model-container-top h2 {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.modal-form-details {
+  margin-top: 8px;
+}
+.modal-form-details {
+  text-align: center;
 }
 /* The Close Button */
 .close {
   color: #aaaaaa;
-  float: right;
+  /* float: right; */
+  position: absolute;
   font-size: 28px;
   font-weight: bold;
+  top: 4px;
+  right: 12px;
 }
 
 .close:hover,
@@ -496,7 +513,7 @@ input[type="reset"] {
   text-decoration: none;
   cursor: pointer;
 }
-@media only screen and (max-width: 39.9375em) {
+@media only screen and (max-width: 900px) {
   h1 {
     font-size: 1.5rem;
   }
@@ -508,6 +525,29 @@ input[type="reset"] {
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 100%;
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .form-buttons {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  .title h2 {
+    font-size: 16px;
+  }
+  .logo h1 {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .col {
+    width: 350px;
   }
 }
