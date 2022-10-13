@@ -31,7 +31,7 @@ let isCorrect = [
   { fieldName: "cname", value: false },
   { fieldName: "mNumb", value: false },
   { fieldName: "email", value: false },
-  { fieldName: "clg-names", value: false },
+  { fieldName: "clg-names", value: true },
   { fieldName: "radio", value: false },
   { fieldName: "dob", value: false },
 ];
