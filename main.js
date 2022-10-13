@@ -35,7 +35,7 @@ let isCorrect = [
   { fieldName: "radio", value: false },
   { fieldName: "dob", value: false },
 ];
-console.log(isCorrect);
+
 function formData() {}
 
 const skillBarInputs = document.querySelectorAll(".skill-input-controls");
