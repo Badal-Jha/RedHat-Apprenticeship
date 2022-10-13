@@ -202,10 +202,10 @@ function submittedData() {
   nameReview.innerText = fname + " " + lname;
   emailReview.innerText = document.getElementById("email").value;
   countryReview.innerText = document.getElementById("cname").value;
-  collegeReview.innerText =
-    document.getElementById("clg-names").options[
-      document.getElementById("clg-names").selectedIndex
-    ].value;
+  // collegeReview.innerText =
+  //   document.getElementById("clg-names").options[
+  //     document.getElementById("clg-names").selectedIndex
+  //   ].value;
   dobReview.innerText = document.getElementById("dob").value;
   htmlReview.innerText = `HTML- ${
     document.getElementById("htmlOutput").value
